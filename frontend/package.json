@@ -31,6 +31,7 @@
     "zone.js": "^0.8.10"
   },
   "devDependencies": {
+    "@angular/cli": "^1.0.3",
     "@types/core-js": "^0.9.41",
     "@types/node": "^7.0.18",
     "concurrently": "^3.4.0",
