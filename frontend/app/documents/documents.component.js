@@ -9,6 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@angular/core");
 let DocumentsComponent = class DocumentsComponent {
     constructor() {
+        this.pageTitle = "Document Dashboard";
         this.documents = [
             {
                 title: "Document 1",

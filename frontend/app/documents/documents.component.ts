@@ -8,7 +8,10 @@ import { Document } from './documents';
 })
 
 export class DocumentsComponent {
+    pageTitle: string = "Document Dashboard"
+
     documents: Document[] = [  //documents type must be an array
+    
         {
             title: "Document 1",
             description: "lorem ipsum",
