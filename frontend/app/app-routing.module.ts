@@ -7,3 +7,10 @@ const routes: Routes = [ //routes is a type of variable
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: HomepageComponent }
 ]
+
+@NgModule({
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
+})
+
+export class AppRoutingModule { }
