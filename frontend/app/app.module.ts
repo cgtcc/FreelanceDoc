@@ -17,7 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
 		BrowserModule,
 		AppRoutingModule,
 		FormsModule,
-		NgbModule.forRoot(),
+		NgbModule.forRoot() // .forRoot() indicate the bootstrap will be available to the root of the application
 	],
 	declarations: [ //created components
 		AppComponent,
