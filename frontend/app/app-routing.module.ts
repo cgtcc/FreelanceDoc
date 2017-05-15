@@ -10,7 +10,7 @@ const routes: Routes = [ //routes is a type of variable
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: HomepageComponent },
     { path: 'documents', component: DocumentsComponent },
-    { path: 'proposal', component: ProposalListComponent },
+    { path: 'proposals', component: ProposalListComponent },
 ]
 
 @NgModule({

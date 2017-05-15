@@ -15,7 +15,7 @@ const routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: homepage_component_1.HomepageComponent },
     { path: 'documents', component: documents_component_1.DocumentsComponent },
-    { path: 'proposal', component: proposal_list_component_1.ProposalListComponent },
+    { path: 'proposals', component: proposal_list_component_1.ProposalListComponent },
 ];
 let AppRoutingModule = class AppRoutingModule {
 };
