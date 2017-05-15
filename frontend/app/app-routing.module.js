@@ -9,9 +9,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@angular/core");
 const router_1 = require("@angular/router");
 const homepage_component_1 = require("./homepage/homepage.component");
+const documents_component_1 = require("./documents/documents.component");
 const routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: 'home', component: homepage_component_1.HomepageComponent }
+    { path: 'home', component: homepage_component_1.HomepageComponent },
+    { path: 'documents', component: documents_component_1.DocumentsComponent },
 ];
 let AppRoutingModule = class AppRoutingModule {
 };
