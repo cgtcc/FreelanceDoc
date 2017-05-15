@@ -10,10 +10,12 @@ const core_1 = require("@angular/core");
 const router_1 = require("@angular/router");
 const homepage_component_1 = require("./homepage/homepage.component");
 const documents_component_1 = require("./documents/documents.component");
+const proposal_list_component_1 = require("./proposal/proposal-list.component");
 const routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: homepage_component_1.HomepageComponent },
     { path: 'documents', component: documents_component_1.DocumentsComponent },
+    { path: 'proposal', component: proposal_list_component_1.ProposalListComponent },
 ];
 let AppRoutingModule = class AppRoutingModule {
 };

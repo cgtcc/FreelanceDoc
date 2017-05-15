@@ -11,6 +11,7 @@ const platform_browser_1 = require("@angular/platform-browser");
 const app_component_1 = require("./app.component");
 const homepage_component_1 = require("./homepage/homepage.component");
 const documents_component_1 = require("./documents/documents.component");
+const proposal_list_component_1 = require("./proposal/proposal-list.component");
 const app_routing_module_1 = require("./app-routing.module");
 let AppModule = class AppModule {
 };
@@ -24,6 +25,7 @@ AppModule = __decorate([
             app_component_1.AppComponent,
             homepage_component_1.HomepageComponent,
             documents_component_1.DocumentsComponent,
+            proposal_list_component_1.ProposalListComponent
         ],
         bootstrap: [
             app_component_1.AppComponent
