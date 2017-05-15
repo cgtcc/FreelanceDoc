@@ -11,9 +11,9 @@ let ProposalShowComponent = class ProposalShowComponent {
 };
 ProposalShowComponent = __decorate([
     core_1.Component({
-        moduleId: 'module.id',
+        moduleId: module.id,
         selector: 'proposal-show',
-        templateUrl: 'proposal-show.component.html'
+        templateUrl: './proposal-show.component.html'
     })
 ], ProposalShowComponent);
 exports.ProposalShowComponent = ProposalShowComponent;
