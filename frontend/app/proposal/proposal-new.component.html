@@ -1,1 +1,10 @@
 <h1>New proposal</h1>
+<div>
+    <form #proposalForm="ngForm">
+        <div class="form-group">
+            <label for="customer">Customer Name</label>
+            <input type="text" id="customer" placeholder="ABC Company" required name="customer" #customer='ngModel' [(ngModel)]="proposal.customer">
+        </div>
+    </form>
+</div>
+<div>{{proposal.customer}}</div>
