@@ -10,9 +10,9 @@ const core_1 = require("@angular/core");
 const proposal_1 = require("./proposal");
 let ProposalListComponent = class ProposalListComponent {
     constructor() {
-        this.proposalOne = new proposal_1.Proposal(15, 'ABC Company', 'http://google.com', 'Ruby on Rails', 150, 120, 15, 'email@domain.com');
-        this.proposalTwo = new proposal_1.Proposal(15, 'ABCD Company', 'http://google.com', 'Ruby on Rails', 150, 120, 15, 'email@domain.com');
-        this.proposalThree = new proposal_1.Proposal(15, 'ABCDE Company', 'http://google.com', 'Ruby on Rails', 150, 120, 15, 'email@domain.com');
+        this.proposalOne = new proposal_1.Proposal(1, 'ABC Company', 'http://google.com', 'Ruby on Rails', 150, 120, 15, 'email@domain.com');
+        this.proposalTwo = new proposal_1.Proposal(2, 'ABCD Company', 'http://google.com', 'Ruby on Rails', 150, 120, 15, 'email@domain.com');
+        this.proposalThree = new proposal_1.Proposal(3, 'ABCDE Company', 'http://google.com', 'Ruby on Rails', 150, 120, 15, 'email@domain.com');
         this.proposals = [
             this.proposalOne,
             this.proposalTwo,
