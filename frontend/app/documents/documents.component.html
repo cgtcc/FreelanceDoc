@@ -1,18 +1,17 @@
-<h1>{{ pageTitle }}</h1>
+ <h1>{{ pageTitle }}</h1>
 
 
 
-<div class="card" style="width: 90%; margin:0 auto;">
+<div class="card" *ngFor="let i of documents">
+    <img class="card-img-top" src="{{i.image_url}}" alt="Post image goes here" width="100%">
+
     <div class="card-block">
 
-        <div *ngFor="let i of documents">
-            <h4 class="card-title"> {{i.title}} </h4>
-            <img class="card-img-top" src="{{i.image_url}}" alt="Post image goes here">
+        <h4 class="card-title"> {{i.title}} </h4>
 
-            <p class="card-text"> {{i.description}} </p>
-            <div><a href="{{i.file_url}}" class="btn btn-lg btn-primary" title="{{i.title}}">Download File</a></div>
-            <hr>
-            <p class="card-text"><small class="text-muted">{{i.updated_at}}</small></p>
-        </div>
+        <p class="card-text"> {{i.description}} </p>
+        <div><a href="{{i.file_url}}" class="btn btn-lg btn-primary" title="{{i.title}}">Download File</a></div>
+        <hr>
+        <p class="card-text"><small class="text-muted">{{i.updated_at}}</small></p>
     </div>
 </div>

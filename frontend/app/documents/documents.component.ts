@@ -17,7 +17,7 @@ export class DocumentsComponent {
             description: "lorem ipsum",
             file_url: 'http://google.com',
             updated_at: '05/14/2017',
-            image_url: './images/1.jpg'
+            image_url: './images/1.svg'
         },
 
         {
@@ -25,7 +25,7 @@ export class DocumentsComponent {
             description: "lorem ipsum",
             file_url: 'http://google.com',
             updated_at: '05/14/2017',
-            image_url: './images/1.jpg'
+            image_url: './images/1.svg'
         },
 
         {
@@ -33,7 +33,7 @@ export class DocumentsComponent {
             description: "lorem ipsum",
             file_url: 'http://google.com',
             updated_at: '05/14/2017',
-            image_url: './images/1.jpg'
+            image_url: './images/1.svg'
         },
     ]
 }

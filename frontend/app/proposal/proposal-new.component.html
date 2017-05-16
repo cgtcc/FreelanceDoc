@@ -1,11 +1,11 @@
 <h1>Create a Proposal</h1>
 
-<div>
+<div class="md-6">
     <form #proposalForm="ngForm">
         <div class="form-group">
             <label for="customer">Customer Name</label>
             <input type="text" id="customer" placeholder="ABC Company" required name="customer" #customer='ngModel' [(ngModel)]="proposal.customer">
-            <div [hidden]="customer.valid || customer.pristine"> 
+            <div [hidden]="customer.valid || customer.pristine">
                 Customer name is required
             </div>
         </div>
@@ -58,7 +58,7 @@
     </form>
 </div>
 <hr>
-<div>
+<div class="md-6">
     <p>Hi {{ proposal.customer }},</p>
 
 
