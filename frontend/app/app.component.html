@@ -8,11 +8,17 @@
             <li class="nav-item">
                 <a class="nav-link" routerLink="/documents">Documents</a>
             </li>
+
             <li class="nav-item">
-                <a class="nav-link" routerLink="/proposals">Proposals</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="proposals/new">New Proposal</a>
+                <div ngbDropdown class="d-inline-block dropdown-links">
+                    <button class="btn btn-outline-primary" id="proposal-dropdown" ngbDropdownToggle>
+                        Proposals
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="proposalDropdown">
+                        <a class="dropdown-item" routerLink="/proposals">Proposals</a>
+                        <a class="dropdown-item" routerLink="/proposals/new">New proposal</a>
+                    </div>
+                </div>
             </li>
         </ul>
     </div>
