@@ -4,7 +4,7 @@ This app help you to manage repetitive aspects of your daily tasks as freelancer
 
 This is a work in progress.  Please come back in a few days to see the final result!
 
-### Manage your proposals by sending quick evaluations : 
+### Quickly email quotes upon request : 
 ![Screenshot of the New proposal feature](https://github.com/codecoaster/FreelanceRails/raw/master/frontend/images/sample1.png )
 
 
