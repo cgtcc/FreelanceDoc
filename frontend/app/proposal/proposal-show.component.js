@@ -25,7 +25,8 @@ ProposalShowComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
         selector: 'proposal-show',
-        templateUrl: './proposal-show.component.html'
+        templateUrl: './proposal-show.component.html',
+        styleUrls: ['proposal.component.css']
     }),
     __metadata("design:paramtypes", [router_1.ActivatedRoute])
 ], ProposalShowComponent);

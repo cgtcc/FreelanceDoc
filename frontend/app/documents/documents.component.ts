@@ -4,7 +4,8 @@ import { Document } from './documents';
 @Component({
     moduleId: module.id,
     selector: 'documents',
-    templateUrl: './documents.component.html'
+    templateUrl: './documents.component.html',
+    styleUrls: ['documents.component.css']
 })
 
 export class DocumentsComponent {
@@ -14,7 +15,7 @@ export class DocumentsComponent {
 
         {
             title: "Document 1",
-            description: "lorem ipsum",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             file_url: 'http://google.com',
             updated_at: '05/14/2017',
             image_url: './images/1.svg'
@@ -22,7 +23,7 @@ export class DocumentsComponent {
 
         {
             title: "Document 2",
-            description: "lorem ipsum",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             file_url: 'http://google.com',
             updated_at: '05/14/2017',
             image_url: './images/1.svg'
@@ -30,7 +31,7 @@ export class DocumentsComponent {
 
         {
             title: "Document 3",
-            description: "lorem ipsum",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             file_url: 'http://google.com',
             updated_at: '05/14/2017',
             image_url: './images/1.svg'
