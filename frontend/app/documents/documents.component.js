@@ -16,21 +16,21 @@ let DocumentsComponent = class DocumentsComponent {
                 description: "lorem ipsum",
                 file_url: 'http://google.com',
                 updated_at: '05/14/2017',
-                image_url: 'http://google.com'
+                image_url: './images/1.jpg'
             },
             {
                 title: "Document 2",
                 description: "lorem ipsum",
                 file_url: 'http://google.com',
                 updated_at: '05/14/2017',
-                image_url: 'http://google.com'
+                image_url: './images/1.jpg'
             },
             {
                 title: "Document 3",
                 description: "lorem ipsum",
                 file_url: 'http://google.com',
                 updated_at: '05/14/2017',
-                image_url: 'http://google.com'
+                image_url: './images/1.jpg'
             },
         ];
     }

@@ -11,13 +11,13 @@ export class DocumentsComponent {
     pageTitle: string = "Document Dashboard"
 
     documents: Document[] = [  //documents type must be an array
-    
+
         {
             title: "Document 1",
             description: "lorem ipsum",
             file_url: 'http://google.com',
             updated_at: '05/14/2017',
-            image_url: 'http://google.com'
+            image_url: './images/1.jpg'
         },
 
         {
@@ -25,7 +25,7 @@ export class DocumentsComponent {
             description: "lorem ipsum",
             file_url: 'http://google.com',
             updated_at: '05/14/2017',
-            image_url: 'http://google.com'
+            image_url: './images/1.jpg'
         },
 
         {
@@ -33,7 +33,7 @@ export class DocumentsComponent {
             description: "lorem ipsum",
             file_url: 'http://google.com',
             updated_at: '05/14/2017',
-            image_url: 'http://google.com'
+            image_url: './images/1.jpg'
         },
     ]
 }
