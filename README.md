@@ -13,3 +13,8 @@ This is a work in progress.  Please come back in a few days to see the final res
 
 
 
+
+### View proposals list :
+![Access the past proposals](https://github.com/codecoaster/FreelanceRails/raw/master/frontend/images/sample3.png )
+
+
