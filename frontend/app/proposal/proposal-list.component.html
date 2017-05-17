@@ -1,9 +1,9 @@
 <h1>Proposal List</h1>
 
 <div class="list-group" *ngFor="let proposal of proposals">
-    <a class="list-group-item list-group-item-action flex-column align-items-start">
+    <a routerLink="/proposal/{{proposal.id}}" class="list-group-item list-group-item-action flex-column align-items-start">
         <div class="d-flex w-100 justify-content-between">
-            <a routerLink="/proposal/{{proposal.id}}">{{proposal.id}} - {{proposal.customer}}</a>
+            <a>{{proposal.id}} - {{proposal.customer}}</a>
 
             <small>Cost : ${{ proposal.hourly_rate * proposal.estimated_hours }}</small>
         </div>
