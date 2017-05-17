@@ -4,6 +4,19 @@ This app help you to manage repetitive aspects of your daily tasks as freelancer
 
 This is a work in progress.  Please come back in a few days to see the final result!
 
+###Instructions for testing : 
+
+1) Install nodeJS : https://nodejs.org/en/download/
+
+2) Open a terminal, and do : 
+
+    git clone https://github.com/codecoaster/FreelanceRails
+    cd FreelanceRails/frontent
+    npm install       
+    npm start
+
+## Screenshots
+
 ### Quickly email quotes upon request : 
 ![Screenshot of the New proposal feature](https://github.com/codecoaster/FreelanceRails/raw/master/frontend/images/sample1.png )
 
