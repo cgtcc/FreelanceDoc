@@ -5,7 +5,7 @@
         <div class="d-flex w-100 justify-content-between">
             <a>{{proposal.id}} - {{proposal.customer}}</a>
 
-            <small>Cost : ${{ proposal.hourly_rate * proposal.estimated_hours }}</small>
+            <small>Cost : {{ proposal.hourly_rate * proposal.estimated_hours | currency }}</small>
         </div>
         <p class="mb-1">
             Technologies : {{ proposal.tools }}
