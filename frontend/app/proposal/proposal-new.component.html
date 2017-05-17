@@ -40,12 +40,14 @@
 
                 <div class="form-group">
                     <label for="hourly_rate">Hourly rate</label>
-                    <input class="form-control" type="number" id="hourly_rate" required name="hourly_rate" #hourly_rate='ngModel' [(ngModel)]="proposal.hourly_rate">
+                    <div class="input-group">
+                        <span class="input-group-addon">$</span>
+                        <input class="form-control" type="number" id="hourly_rate" required name="hourly_rate" #hourly_rate='ngModel' [(ngModel)]="proposal.hourly_rate">
+                    </div>
                     <div [hidden]="hourly_rate.valid || hourly_rate.pristine" class="alert alert-danger">
                         You need to enter your hourly rate for the project
                     </div>
                 </div>
-
                 <div class="form-group">
                     <label for="weeks_to_complete">Weeks to Complete</label>
                     <input class="form-control" type="number" id="weeks_to_complete" required name="weeks_to_complete" #weeks_to_complete='ngModel'
@@ -54,7 +56,6 @@
                         You need to enter the weeks you estimate to complete the project
                     </div>
                 </div>
-
                 <div class="form-group">
                     <label for="client_email">Client Email <em>(Optional)</em></label>
                     <input class="form-control" type="email" id="client_email" name="client_email" #client_email='ngModel' [(ngModel)]="proposal.client_email">
