@@ -3,3 +3,7 @@
 .container { }
 
 .card {margin-bottom:2rem;padding:2rem}
+
+.form-container{
+    padding:30px;
+}
