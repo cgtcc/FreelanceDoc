@@ -11,8 +11,11 @@ This is a work in progress.  Please come back in a few days to see the final res
 2) Open a terminal, and do : 
 
     git clone https://github.com/codecoaster/FreelanceRails
+
     cd FreelanceRails/frontent
+
     npm install       
+    
     npm start
 
 ## Screenshots
