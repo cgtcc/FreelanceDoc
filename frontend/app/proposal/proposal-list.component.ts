@@ -15,7 +15,7 @@ export class ProposalListComponent {
 
     proposalThree: Proposal = new Proposal(3, 'FGHI Society', 'http://google.com', 'Ruby on Rails, Javascript', 100, 80, 10, 'email@domain.com')
 
-    proposals: Proposal[] = [150
+    proposals: Proposal[] = [
         this.proposalOne,
         this.proposalTwo,
         this.proposalThree

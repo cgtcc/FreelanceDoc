@@ -13,7 +13,7 @@ let ProposalListComponent = class ProposalListComponent {
         this.proposalOne = new proposal_1.Proposal(1, 'ABC Company Ltd', 'http://google.com', 'Ruby on Rails, NodeJS', 300, 10, 25, 'email@domain.com');
         this.proposalTwo = new proposal_1.Proposal(2, 'DEFG Company Inc', 'http://google.com', 'Ruby on Rails, AngularJS', 60, 200, 35, 'email@domain.com');
         this.proposalThree = new proposal_1.Proposal(3, 'FGHI Society', 'http://google.com', 'Ruby on Rails, Javascript', 100, 80, 10, 'email@domain.com');
-        this.proposals = [150,
+        this.proposals = [
             this.proposalOne,
             this.proposalTwo,
             this.proposalThree
