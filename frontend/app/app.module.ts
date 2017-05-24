@@ -29,6 +29,9 @@ import { AppRoutingModule } from './app-routing.module';
 		ProposalShowComponent,
 		ContactNewComponent
 	],
+	providers:[
+		DocumentService
+	],
 	bootstrap: [
 		AppComponent
 	]

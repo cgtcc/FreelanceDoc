@@ -37,6 +37,9 @@ AppModule = __decorate([
             proposal_show_component_1.ProposalShowComponent,
             contact_new_component_1.ContactNewComponent
         ],
+        providers: [
+            DocumentService
+        ],
         bootstrap: [
             app_component_1.AppComponent
         ]
