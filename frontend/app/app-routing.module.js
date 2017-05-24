@@ -13,13 +13,15 @@ const documents_component_1 = require("./documents/documents.component");
 const proposal_list_component_1 = require("./proposal/proposal-list.component");
 const proposal_new_component_1 = require("./proposal/proposal-new.component");
 const proposal_show_component_1 = require("./proposal/proposal-show.component");
+const contact_new_component_1 = require("./contact/contact-new.component");
 const routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'proposals', component: proposal_list_component_1.ProposalListComponent },
     { path: 'home', component: homepage_component_1.HomepageComponent },
     { path: 'documents', component: documents_component_1.DocumentsComponent },
     { path: 'proposals/new', component: proposal_new_component_1.ProposalNewComponent },
-    { path: 'proposal/:id', component: proposal_show_component_1.ProposalShowComponent }
+    { path: 'proposal/:id', component: proposal_show_component_1.ProposalShowComponent },
+    { path: 'contact', component: contact_new_component_1.ContactNewComponent },
 ];
 let AppRoutingModule = class AppRoutingModule {
 };
