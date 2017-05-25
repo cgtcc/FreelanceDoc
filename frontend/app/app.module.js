@@ -13,6 +13,7 @@ const ng_bootstrap_1 = require("@ng-bootstrap/ng-bootstrap");
 const app_component_1 = require("./app.component");
 const homepage_component_1 = require("./homepage/homepage.component");
 const documents_component_1 = require("./documents/documents.component");
+const document_service_1 = require("./documents/document.service");
 const proposal_list_component_1 = require("./proposal/proposal-list.component");
 const proposal_new_component_1 = require("./proposal/proposal-new.component");
 const proposal_show_component_1 = require("./proposal/proposal-show.component");
@@ -40,7 +41,7 @@ AppModule = __decorate([
             contact_new_component_1.ContactNewComponent
         ],
         providers: [
-            DocumentService
+            document_service_1.DocumentService
         ],
         bootstrap: [
             app_component_1.AppComponent

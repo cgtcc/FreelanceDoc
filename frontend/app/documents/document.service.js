@@ -15,7 +15,7 @@ const Rx_1 = require("rxjs/Rx");
 let DocumentService = class DocumentService {
     constructor(http) {
         this.http = http;
-        this.documentsUrl = 'http://localhost:3001/freelance_documents.json';
+        this.documentsUrl = 'http://localhost:3003/freelance_documents.json';
     }
     getDocuments() {
         return this.http.get(this.documentsUrl)

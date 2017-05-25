@@ -6,13 +6,16 @@ import { Document } from './documents';
 
 @Injectable()
 export class DocumentService {
-	private documentsUrl = 'http://localhost:3001/freelance_documents.json';
+	private documentsUrl = 'http://localhost:3003/freelance_documents.json';
 
+//constructor make use of http requests
 	constructor(
 		private http: Http
 	) {}
 
 	getDocuments(): Observable<Document[]> {
+
+        //connecting to the api, and mapping the reply as a json array Document[] and then catch errors
 		return this.http.get(this.documentsUrl)
 										.map((response: Response) => <Document[]>response.json())
 										.catch(this.handleError);
