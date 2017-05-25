@@ -16,6 +16,7 @@ const documents_component_1 = require("./documents/documents.component");
 const proposal_list_component_1 = require("./proposal/proposal-list.component");
 const proposal_new_component_1 = require("./proposal/proposal-new.component");
 const proposal_show_component_1 = require("./proposal/proposal-show.component");
+const http_1 = require("@angular/http");
 const contact_new_component_1 = require("./contact/contact-new.component");
 const app_routing_module_1 = require("./app-routing.module");
 let AppModule = class AppModule {
@@ -26,7 +27,8 @@ AppModule = __decorate([
             platform_browser_1.BrowserModule,
             app_routing_module_1.AppRoutingModule,
             forms_1.FormsModule,
-            ng_bootstrap_1.NgbModule.forRoot()
+            ng_bootstrap_1.NgbModule.forRoot(),
+            http_1.HttpModule
         ],
         declarations: [
             app_component_1.AppComponent,

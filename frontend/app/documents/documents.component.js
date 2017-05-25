@@ -5,34 +5,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@angular/core");
+const document_service_1 = require("./document.service");
 let DocumentsComponent = class DocumentsComponent {
-    constructor() {
+    constructor(documentService) {
+        this.documentService = documentService;
         this.pageTitle = "Document Dashboard";
-        this.documents = [
-            {
-                title: "Document 1",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                file_url: 'http://google.com',
-                updated_at: '05/14/2017',
-                image_url: './images/1.svg'
-            },
-            {
-                title: "Document 2",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                file_url: 'http://google.com',
-                updated_at: '05/14/2017',
-                image_url: './images/1.svg'
-            },
-            {
-                title: "Document 3",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                file_url: 'http://google.com',
-                updated_at: '05/14/2017',
-                image_url: './images/1.svg'
-            },
-        ];
+        this.documents = [];
+        this.mode = "Observable";
+    }
+    ngOnInit() {
+    }
+    getDocuments() {
+        this.documentService.getDocuments()
+            .subscribe(documents => this.documents = documents, error => this.errorMessage = error);
     }
 };
 DocumentsComponent = __decorate([
@@ -41,7 +31,8 @@ DocumentsComponent = __decorate([
         selector: 'documents',
         templateUrl: './documents.component.html',
         styleUrls: ['documents.component.css']
-    })
+    }),
+    __metadata("design:paramtypes", [document_service_1.DocumentService])
 ], DocumentsComponent);
 exports.DocumentsComponent = DocumentsComponent;
 //# sourceMappingURL=documents.component.js.map
