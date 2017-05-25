@@ -17,7 +17,7 @@ export class DocumentsComponent implements OnInit{
     mode= "Observable"; //versions of angular > 2 may not have this as requirement??
 
     constructor(
-        private documentService: DocumentService;
+        private documentService: DocumentService
     ) {}
 
     ngOnInit() {
