@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs/Rx';
+
 import { Document } from './documents';
 import { DocumentService } from './document.service';
 
@@ -6,21 +8,24 @@ import { DocumentService } from './document.service';
     moduleId: module.id,
     selector: 'documents',
     templateUrl: './documents.component.html',
-    styleUrls: ['documents.component.css']
+    styleUrls: ['documents.component.css'],
+    providers : [ DocumentService ]
 })
 
 export class DocumentsComponent implements OnInit{
     pageTitle: string = "Document Dashboard";
 
-    documents: Document[] = [];
+    documents: Document[];
     errorMessage: string;
-    mode= "Observable"; //versions of angular > 2 may not have this as requirement??
+    mode= "Observable"; 
 
     constructor(
         private documentService: DocumentService
     ) {}
 
     ngOnInit() {
+        let timer = Observable.timer(0, 5000);
+        timer.subscribe(() => this.getDocuments());
 
     }
 

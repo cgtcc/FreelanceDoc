@@ -10,15 +10,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@angular/core");
+const Rx_1 = require("rxjs/Rx");
 const document_service_1 = require("./document.service");
 let DocumentsComponent = class DocumentsComponent {
     constructor(documentService) {
         this.documentService = documentService;
         this.pageTitle = "Document Dashboard";
-        this.documents = [];
         this.mode = "Observable";
     }
     ngOnInit() {
+        let timer = Rx_1.Observable.timer(0, 5000);
+        timer.subscribe(() => this.getDocuments());
     }
     getDocuments() {
         this.documentService.getDocuments()
@@ -30,7 +32,8 @@ DocumentsComponent = __decorate([
         moduleId: module.id,
         selector: 'documents',
         templateUrl: './documents.component.html',
-        styleUrls: ['documents.component.css']
+        styleUrls: ['documents.component.css'],
+        providers: [document_service_1.DocumentService]
     }),
     __metadata("design:paramtypes", [document_service_1.DocumentService])
 ], DocumentsComponent);
