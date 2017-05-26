@@ -8,17 +8,35 @@ This is a work in progress.  Please come back in a few days to see the final res
 
 1) Install nodeJS : https://nodejs.org/en/download/
 
-2) Open a terminal, and do : 
+2) Clone the repository :
 
     git clone https://github.com/codecoaster/FreelanceRails
 
     cd FreelanceRails/frontent
 
+3) To run the frontend, open a terminal, and do : 
+
     npm install       
     
     npm start
 
-## Screenshots
+
+4) Instructions for the backend (assuming you are running on localhost) : 
+
+    bundle install
+
+    rails db:create
+
+    rails db:install
+
+    bundle exec rake db:setup
+
+then run the server : 
+
+    rails s -p 3003
+
+
+## Screenshots (may not be up-to-date)
 
 ### Quickly email quotes upon request : 
 ![Screenshot of the New proposal feature](https://github.com/codecoaster/FreelanceRails/raw/master/frontend/images/sample1.png )
