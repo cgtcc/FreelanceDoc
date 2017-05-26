@@ -16,7 +16,6 @@
 	)
 end
 10.times do |proposal|
-
 	Proposal.create!(
         customer: "Customer #{proposal}",
         portfolio_url: "http://google.com",
