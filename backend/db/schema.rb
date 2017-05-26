@@ -10,13 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170524184007) do
+ActiveRecord::Schema.define(version: 20170526073540) do
 
   create_table "freelance_documents", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string "title"
     t.string "description"
     t.text "file_url"
     t.text "image_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "proposals", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+    t.string "customer"
+    t.string "portfolio_url"
+    t.string "tools"
+    t.decimal "estimaged_hours", precision: 10
+    t.decimal "hourly_rate", precision: 10
+    t.integer "weeks_to_complete"
+    t.string "client_email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
