@@ -9,9 +9,8 @@ This is a work in progress.  Please come back in a few days to see the final res
 1) Install nodeJS : https://nodejs.org/en/download/
 
 2) Clone the repository :
-
+    
     git clone https://github.com/codecoaster/FreelanceRails
-
     cd FreelanceRails/frontent
 
 3) To run the frontend, open a terminal, and do : 
