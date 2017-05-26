@@ -14,7 +14,7 @@ This is a work in progress.  Please come back in a few days to see the final res
     
     cd FreelanceRails/frontent
 
-3) To run the frontend, open a terminal, and do : 
+3) To run the frontend, do : 
 
     npm install       
     
