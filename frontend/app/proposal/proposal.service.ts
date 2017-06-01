@@ -8,7 +8,7 @@ import { Proposal } from './proposal';
 
 @Injectable()
 export class ProposalService {
-	private proposalsUrl = 'http://localhost:3003/proposals.json';
+	private proposalsUrl = 'http://localhost:3003/proposals';
 
 //constructor make use of http requests
 	constructor(
@@ -22,6 +22,10 @@ export class ProposalService {
 										.map((response: Response) => <Proposal[]>response.json())
 										.catch(this.handleError);
 	}
+
+  getProposal(id: number) {
+    return this.http.get(this.proposalsUrl + "/" + id + '.json')
+  }
 
 
     // errors management (from angular documentation @ https://angular.io/docs/ts/latest/guide/server-communication.html#!#error-handling )
