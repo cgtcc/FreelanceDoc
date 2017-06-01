@@ -12,7 +12,7 @@ import { ProposalNewComponent } from './proposal/proposal-new.component';
 import { ProposalShowComponent } from './proposal/proposal-show.component';
 import { HttpModule } from '@angular/http';
 import { ContactNewComponent } from './contact/contact-new.component';
-import { ProposalService } from './proposal/proposal-service.component';
+import { ProposalService } from './proposal/proposal.service';
 
 import { AppRoutingModule } from './app-routing.module';
 
