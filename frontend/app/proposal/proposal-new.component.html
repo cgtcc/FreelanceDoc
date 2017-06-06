@@ -60,7 +60,14 @@
                     <label for="client_email">Client Email <em>(Optional)</em></label>
                     <input class="form-control" type="email" id="client_email" name="client_email" #client_email='ngModel' [(ngModel)]="proposal.client_email">
                 </div>
-
+                <!--[disabled] unless the form is valid, the button cannot be used-->
+                <button type="submit"
+                class="btn btn-outline-primary btn-lg"
+                [disabled]="!proposalForm.form.valid"
+                [hidden]="submitted"
+                >
+                    Generate Proposal
+                </button>
             </form>
         </div>
         <hr>

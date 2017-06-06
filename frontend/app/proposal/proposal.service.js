@@ -25,6 +25,11 @@ let ProposalService = class ProposalService {
     getProposal(id) {
         return this.http.get(this.proposalsUrl + "/" + id + '.json');
     }
+    createProposal(proposal) {
+        let headers = new http_1.Headers({ 'Content-Type': 'application/json' });
+        let options = new http_1.RequestOptions({ headers: headers });
+        return this.http.post(this.proposalsUrl, JSON.stringify(proposal), { headers: headers }).map((res) => res.json());
+    }
     handleError(error) {
         let errMsg;
         if (error instanceof http_1.Response) {

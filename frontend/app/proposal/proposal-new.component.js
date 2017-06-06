@@ -11,6 +11,7 @@ const proposal_1 = require("./proposal");
 let ProposalNewComponent = class ProposalNewComponent {
     constructor() {
         this.proposal = new proposal_1.Proposal;
+        this.submitted = false;
     }
 };
 ProposalNewComponent = __decorate([

@@ -11,5 +11,7 @@ import { Proposal } from './proposal';
 
 export class ProposalNewComponent {
     proposal = new Proposal;
+    //next line concern the [hidden]="submitted" tag in the proposal-new.component.html file
+    submitted: boolean = false;
 
 }
