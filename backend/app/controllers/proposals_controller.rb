@@ -3,7 +3,7 @@ class ProposalsController < ApplicationController
 
   # GET /proposals
   def index
-    @proposals = Proposal.all
+    @proposals = Proposal.order('created_at DESC')
 
     render json: @proposals
   end
